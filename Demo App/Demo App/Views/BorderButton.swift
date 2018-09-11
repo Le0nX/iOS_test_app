@@ -10,8 +10,8 @@ import UIKit
 
 class BorderButton: UIButton {
 
-    override func awakeFromNib() {
-        super.awakeFromNib() // здесь мы вызываем нативную эпловскую awakeFromNib()
+    override func awakeFromNib() { // переопределяем метод UIButton
+        super.awakeFromNib() // здесь мы вызываем метод UIButton awakeFromNib()
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.white.cgColor
     }
